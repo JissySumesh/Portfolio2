@@ -1,48 +1,46 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-    <title>Sir Tim Berners-Lee</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+	<title>Kwiter</title>
 
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="kwitter.js"></script>
 </head>
-
 <body>
 
-    <ul class="menu">
-        <li class="links">Home</li>
-        <li class="links">My Videos</li>
-        <li class="links">Work</li>
-        <li class="links">Writings</li>
-        <li class="links">Contact</li>
+<center>
+	<h1 class="header">	
+		Kwitter	<sup>
+	<img src="m2.png">
+	</sup>
+</h1>
 
-    </ul>
+	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
 
-    <section id="welcome">
-        <div class="parallax-inner">
-            <img src="stbl.jpg" class="profile" />
-            <h1>I Am <br><span id="name">Tim Berners-Lee</span></h1>
-            <h2> I am the founder of www: World Wide Web</h2>
-        </div>
+	<img src="logo.png" class="logo">
+		<h3 >See what is happening in the world right now</h3>
 
-    </section>
+		<h4 >Join Kwitter today</h4>
+		
+		<div class="form-group">
+		  <label >User Name:</label>
+		 <input type="text" id="user_name" class="form-control" placeholder="User Name">
+		</div>
 
+		<button id="login_button" class="btn btn-primary" onclick="addUser()">Log in</button>
+		<br><br>
+	</div>
+</center>
 
-
-    <section id="bio">
-        <h1>Hi!</h1>
-        <div class="line"></div>
-        <p>Tim Berners-Lee is a software engineer who invented the Internet (or the World Wide Web) in 1989 while at CERN, the European Particle Physics Laboratory.
-
-            He is director of the World Wide Web Consortium that he founded and a Professor in the Computer Science Department at the University of Oxford.
-
-            In 2001 he became a Fellow of the Royal Society and in 2004 he was knighted.<br><br>In 1994 Berners-Lee founded the World Wide Web Consortium (W3C) at the Laboratory of Computer Science (LCS) at the Massachusetts Institute of Technology in Boston. It was made up of companies that wanted to work together to create Web standards and also improve the Web. It was quickly agreed that the technology should be free of royalties and patents. Berners-Lee has served as director of this W3C since it was founded.
-
-            In 1995 Microsoft produced the first version of Internet Explorer and this commercial browser created enormous growth in websites and web users.
-
-            The Web was first used for e-commerce in 1997.</p>
-    </section>
-
-</body></html>
+</body>
+</html>
